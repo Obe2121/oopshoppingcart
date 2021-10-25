@@ -2,27 +2,33 @@ import os
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-cart = {}
+cart = []
 
 class ShoppingCart():
     def __init__(self):
-        pass
-def add_item(self):
-   response = input("What would you like to add? ")
-   cart.append(response)
+        self.add_item
+        self.remove_item
+        self.show_cart
+        self.clear_cart
+
+    def add_item(self):
+        response = input("What would you like to add? ")
+        cart.append(response)
    
-def remove_item(self):
-    self.show_cart()
-    response = input("what would you like to remove? ")
-    cart.pop(response)
+    def remove_item(self):
+        self.show_cart()
+        response = input("what would you like to remove? ")
+        cart.pop(response)
 
-def show_cart():
-    print(cart)
+    def show_cart():
+        print(cart)
 
-def clear_cart():
-    cart.remove
+    def clear_cart():
+        cart.remove
 
 class UI():
+    def __init__(self):
+        self.run_program
     def run_program(self):
         while True:
             response = input('What would you like to do? Add / Remove / Show / Clear / Quit ')
@@ -37,11 +43,5 @@ class UI():
             else:
                 break
 
-run_cart=UI
+run_cart=UI()
 run_cart.run_program()
-
-
-
-
-
-
